@@ -8,26 +8,21 @@
 
 import Foundation
 import CoreData
+import GameplayKit
 
 
 class PersonController {
     
     static let sharedController = PersonController()
     
-    let fetchedResultsController: NSFetchedResultsController
-    
-    
-    init(){
+    var persons: [Person]{
+        
         let request = NSFetchRequest(entityName: "Person")
-        let lnSortDescriptor = NSSortDescriptor(key: "lastName", ascending: true)
-        request.sortDescriptors = [lnSortDescriptor]
-        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: Stack.sharedStack.managedObjectContext, sectionNameKeyPath: "lastName", cacheName: nil)
-        do {
-            try fetchedResultsController.performFetch()
-        } catch {
-            print("fetch error")
-        }
+        let moc = Stack.sharedStack.managedObjectContext
+      
+        return (try? moc.executeFetchRequest(request)) as? [Person] ?? []
     }
+    
     
     //CRUD
     
@@ -40,9 +35,9 @@ class PersonController {
         }
     }
     
-    func addPerson(firstName: String, lastName: String){
+    func addPerson(fullName: String){
         
-        let _ = Person(firstName: firstName, lastName: lastName)
+        let _ = Person(fullName: fullName)
         saveToPersistentStorage()
     }
     
@@ -51,28 +46,16 @@ class PersonController {
         saveToPersistentStorage()
     }
     
-    
     //Random func
     
-    func randomGenerator(){
-        
-       ///???
+    func shuffleArray<T>(var array: [T]) -> [T] {
+        for index in (0..<array.count) {
+            let randomIndex = Int(arc4random_uniform(UInt32(index)))
+            (array[index], array[randomIndex]) = (array[randomIndex], array[index])
+        }
+        return array
     }
-    
 }
-
-
-
-//dice1 = arc4random_uniform(6) + 1      //to get a random num between 1 and 6
-
-//dice1 = arc4random_uniform(20) + 10    //to get a random num between 10 and 30
-
-
-
-
-
-
-
 
 
 

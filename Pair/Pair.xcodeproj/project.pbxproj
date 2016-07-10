@@ -15,8 +15,9 @@
 		DD0BEE3C1D2FFEB900F597B1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD0BEE3A1D2FFEB900F597B1 /* Model.xcdatamodeld */; };
 		DD0BEE421D3000DB00F597B1 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BEE411D3000DB00F597B1 /* Stack.swift */; };
 		DD0BEE441D30017E00F597B1 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BEE431D30017E00F597B1 /* PersonController.swift */; };
-		DD0BEE4B1D30097F00F597B1 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BEE491D30097F00F597B1 /* Person+CoreDataProperties.swift */; };
-		DD0BEE4C1D30097F00F597B1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BEE4A1D30097F00F597B1 /* Person.swift */; };
+		DDFE97E01D31AD6300535CA2 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE97DE1D31AD6300535CA2 /* Person+CoreDataProperties.swift */; };
+		DDFE97E11D31AD6300535CA2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE97DF1D31AD6300535CA2 /* Person.swift */; };
+		DDFE97E31D31BC0600535CA2 /* DetailPairTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE97E21D31BC0600535CA2 /* DetailPairTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		DD0BEE3B1D2FFEB900F597B1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DD0BEE411D3000DB00F597B1 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		DD0BEE431D30017E00F597B1 /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
-		DD0BEE491D30097F00F597B1 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DD0BEE4A1D30097F00F597B1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DDFE97DE1D31AD6300535CA2 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDFE97DF1D31AD6300535CA2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DDFE97E21D31BC0600535CA2 /* DetailPairTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPairTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,10 +50,11 @@
 		DD0BEE1A1D2FFB1600F597B1 = {
 			isa = PBXGroup;
 			children = (
-				DD0BEE491D30097F00F597B1 /* Person+CoreDataProperties.swift */,
-				DD0BEE4A1D30097F00F597B1 /* Person.swift */,
+				DDFE97DE1D31AD6300535CA2 /* Person+CoreDataProperties.swift */,
+				DDFE97DF1D31AD6300535CA2 /* Person.swift */,
 				DD0BEE431D30017E00F597B1 /* PersonController.swift */,
 				DD0BEE381D2FFE8000F597B1 /* ListPairTableViewController.swift */,
+				DDFE97E21D31BC0600535CA2 /* DetailPairTableViewController.swift */,
 				DD0BEE411D3000DB00F597B1 /* Stack.swift */,
 				DD0BEE251D2FFB1700F597B1 /* Pair */,
 				DD0BEE241D2FFB1600F597B1 /* Products */,
@@ -152,9 +155,10 @@
 			files = (
 				DD0BEE271D2FFB1700F597B1 /* AppDelegate.swift in Sources */,
 				DD0BEE391D2FFE8000F597B1 /* ListPairTableViewController.swift in Sources */,
-				DD0BEE4B1D30097F00F597B1 /* Person+CoreDataProperties.swift in Sources */,
+				DDFE97E01D31AD6300535CA2 /* Person+CoreDataProperties.swift in Sources */,
 				DD0BEE421D3000DB00F597B1 /* Stack.swift in Sources */,
-				DD0BEE4C1D30097F00F597B1 /* Person.swift in Sources */,
+				DDFE97E31D31BC0600535CA2 /* DetailPairTableViewController.swift in Sources */,
+				DDFE97E11D31AD6300535CA2 /* Person.swift in Sources */,
 				DD0BEE441D30017E00F597B1 /* PersonController.swift in Sources */,
 				DD0BEE3C1D2FFEB900F597B1 /* Model.xcdatamodeld in Sources */,
 			);
@@ -306,6 +310,7 @@
 				DD0BEE371D2FFB1700F597B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
